@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 const Login = () => {
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
   const handleLogin = () => {
-    if (username || password) {
+    if (email || password) {
     }
   };
 
@@ -14,12 +14,12 @@ const Login = () => {
     <div>
       <h2>Login</h2>
       <div>
-        <label htmlFor="username">Username:</label>
+        <label htmlFor="email">Username:</label>
         <input
-          type="text"
-          id="username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          type="email"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
       </div>
       <div>
