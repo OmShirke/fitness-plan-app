@@ -1,5 +1,26 @@
 import "./App.css";
+import React, { useState } from "react";
+import { Login } from "./components/login";
+import { SignUp } from "./components/Register";
 
-function App() {}
+export default function App() {
+  const [isSignUp, setIsSignUp] = useState(false);
 
-export default App;
+  const handleSignUpClick = () => {
+    setIsSignUp(true);
+  };
+
+  const handleSignInClick = () => {
+    setIsSignUp(false);
+  };
+
+  return (
+    <div>
+      {isSignUp ? (
+        <Login onSignInClick={handleSignInClick} />
+      ) : (
+        <SignUp onSignUpClick={handleSignUpClick} />
+      )}
+    </div>
+  );
+}
