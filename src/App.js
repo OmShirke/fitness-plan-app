@@ -7,19 +7,21 @@ export default function App() {
   const [isSignUp, setIsSignUp] = useState(false);
 
   const handleSignUpClick = () => {
+    console.log("Sign up button clicked");
     setIsSignUp(true);
   };
 
   const handleSignInClick = () => {
+    console.log("Sign up button clicked");
     setIsSignUp(false);
   };
 
   return (
     <div>
       {isSignUp ? (
-        <Login onSignInClick={handleSignInClick} />
+        <SignUp onSignInClick={handleSignInClick} />
       ) : (
-        <SignUp onSignUpClick={handleSignUpClick} />
+        <Login onSignUpClick={handleSignUpClick} />
       )}
     </div>
   );

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { SignUp } from "./Register";
 
-export function Login({ OnSignUpClick }) {
+export function Login({ onSignUpClick }) {
   const [currentUser, setCurrentUser] = useState();
 
   const [email, setEmail] = useState("");
@@ -35,7 +34,9 @@ export function Login({ OnSignUpClick }) {
         <div className="toggle">
           <div className="toggle-panel toggle-right">
             <h1>New to Website?</h1>
-            <button onClick={OnSignUpClick}>Register</button>
+            <p>
+              <button onClick={onSignUpClick}>Register</button>
+            </p>
           </div>
         </div>
       </div>

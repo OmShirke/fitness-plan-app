@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Login } from "./login";
 
 export function SignUp({ onSignInClick }) {
   const [email, setEmail] = useState("");
@@ -22,7 +21,9 @@ export function SignUp({ onSignInClick }) {
         <div className="toggle">
           <div className="toggle-panel toggle-right">
             <h1>Already a user?</h1>
-            <button onClick={onSignInClick}>Login</button>
+            <p>
+              <button onClick={onSignInClick}>Login</button>
+            </p>
           </div>
         </div>
       </div>
