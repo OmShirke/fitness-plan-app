@@ -208,3 +208,52 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+/* home.css*/
+.home{
+  width: 100%;
+  height: 100vh; 
+  overflow: auto; 
+}
+
+.home-content{
+    padding-top: 50px;
+}
+/* styles.css */
+.navbar {
+  background-color: #512da8;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar button {
+  background-color: #fff;
+  color: #512da8;
+}
+
+.navbar a:hover,
+.navbar button:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
