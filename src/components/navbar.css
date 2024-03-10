@@ -1,0 +1,48 @@
+.navbar {
+  background-color: #512da8;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  padding: 20px;
+  height: 60px;
+}
+
+.nav-link{
+  padding-left: 10px;
+  height: 30px;
+}
+
+.navbar ul {
+  list-style-position: inside;
+  height: 20px;
+}
+
+.navbar li {
+  display: inline;
+  height: 20px;
+  margin-right: 35px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  height: 30px;
+}
+
+.navbar button {
+  background-color: #fff;
+  color: #512da8;
+}
+
+.navbar a:hover,
+.navbar button:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.icons{
+  width: 20px;
+  height: 10px;
+}

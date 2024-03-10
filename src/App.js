@@ -1,18 +1,18 @@
 import "./App.css";
 import React, { useState } from "react";
+import { BrowseRouter, Routes, Route } from "react-router-dom";
 import { Login } from "./components/login";
 import { SignUp } from "./components/Register";
+import { Home } from "./components/Home";
 
 export default function App() {
   const [isSignUp, setIsSignUp] = useState(false);
 
   const handleSignUpClick = () => {
-    console.log("Sign up button clicked");
     setIsSignUp(true);
   };
 
   const handleSignInClick = () => {
-    console.log("Sign up button clicked");
     setIsSignUp(false);
   };
 

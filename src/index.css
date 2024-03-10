@@ -7,6 +7,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
 body{
     background-color: #c9d6ff;
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
@@ -26,7 +27,10 @@ body{
     width: 768px;
     max-width: 100%;
     min-height: 480px;
-} */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
 
 .container p{
     font-size: 14px;
@@ -209,51 +213,4 @@ body{
     transform: translateX(200%);
 }
 
-/* home.css*/
-.home{
-  width: 100%;
-  height: 100vh; 
-  overflow: auto; 
-}
-
-.home-content{
-    padding-top: 50px;
-}
-/* styles.css */
-.navbar {
-  background-color: #512da8;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 1000; 
-  padding: 10px;
-}
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar li {
-  display: inline;
-  margin-right: 20px;
-}
-
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.navbar button {
-  background-color: #fff;
-  color: #512da8;
-}
-
-.navbar a:hover,
-.navbar button:hover {
-  opacity: 0.8; /* Reduce opacity on hover */
-}
 
